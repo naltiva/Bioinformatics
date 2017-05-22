@@ -32,3 +32,30 @@ pub fn frequent_words(text: &str, k: usize) -> Vec<&str> {
 
     return frequent;
 }
+
+
+//pub fn reverse_string(text: &str) -> &str {
+//    let mut reverse = &text.chars().rev();
+//    return reverse;
+//}
+
+
+//week2
+
+
+
+pub fn skew(text: &str) -> Vec<&str> {
+    let mut text = "CATGGGCATCGGCCATACGCC";
+   // let mut skew_gc = vec![ ];
+    let mut count_gc = vec![0 ; text.len()];
+    for i in 0..text.len() {
+        if &text[i] == "G" {
+            count_gc == count_gc += 1;
+        }
+        if &text[i] == "C" {
+            count_gc == count_gc -= 1;
+            }
+        }
+
+    return count_gc;
+}
