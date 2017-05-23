@@ -32,3 +32,10 @@ pub fn frequent_words(text: &str, k: usize) -> Vec<&str> {
 
     return frequent;
 }
+
+
+//pub fn reverse_string(text: &str) -> &str {
+//    let mut reverse = &text.chars().rev();
+//    return reverse;
+//}
+
